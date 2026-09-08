@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Premium Collection | Premium Shoes ₹2,999</title>
+  <meta name="description" content="Shop our Premium Collection. Premium shoes at ₹2,999 with 35% advance payment and COD available.">
+
+  <link rel="canonical" href="https://crickplusex2526.github.io/Tennis-Pilot-1/">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">PREMIUM COLLECTION</div>
+  <p>Premium Shoes • COD Available</p>
+</header>
+
+<main>
+
+  <section class="hero">
+    <h1>Premium Collection</h1>
+    <p>Premium style. Premium comfort.</p>
+    <div class="price">
+      <del>₹4,500</del>
+      <strong>₹2,999</strong>
+    </div>
+    <p class="advance">35% Advance: ₹1,049.65</p>
+    <p>📦 COD Available</p>
+  </section>
+
+  <section class="products">
+
+    <div class="product">
+      <img src="IMG_6381.jpeg" alt="Premium Collection Shoe Code 144">
+      <h2>Premium Shoe</h2>
+      <small>code:144</small>
+      <p><del>₹4,500</del> <b>₹2,999</b></p>
+      <button onclick="selectProduct('code:144')">ORDER NOW</button>
+    </div>
+
+    <div class="product">
+      <img src="IMG_6378.jpeg" alt="Premium Collection Shoe Code 145">
+      <h2>Premium Shoe</h2>
+      <small>code:145</small>
+      <p><del>₹4,500</del> <b>₹2,999</b></p>
+      <button onclick="selectProduct('code:145')">ORDER NOW</button>
+    </div>
+
+    <div class="product">
+      <img src="IMG_6379.jpeg" alt="Premium Collection Shoe Code 146">
+      <h2>Premium Shoe</h2>
+      <small>code:146</small>
+      <p><del>₹4,500</del> <b>₹2,999</b></p>
+      <button onclick="selectProduct('code:146')">ORDER NOW</button>
+    </div>
+
+    <div class="product">
+      <img src="IMG_6383.jpeg" alt="Premium Collection Shoe Code 147">
+      <h2>Premium Shoe</h2>
+      <small>code:147</small>
+      <p><del>₹4,500</del> <b>₹2,999</b></p>
+      <button onclick="selectProduct('code:147')">ORDER NOW</button>
+    </div>
+
+  </section>
+
+  <section class="order-section" id="order">
+
+    <h2>Place Your Order</h2>
+
+    <form id="orderForm">
+
+      <label>Product Code</label>
+      <select name="productCode" id="productCode" required>
+        <option value="">Select Product</option>
+        <option value="code:144">code:144</option>
+        <option value="code:145">code:145</option>
+        <option value="code:146">code:146</option>
+        <option value="code:147">code:147</option>
+      </select>
+
+      <label>Size</label>
+      <select name="size" required>
+        <option value="">Select Size</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+      </select>
+
+      <label>Quantity</label>
+      <input type="number" name="quantity" value="1" min="1" required>
+
+      <label>Full Name</label>
+      <input type="text" name="name" placeholder="Enter your name" required>
+
+      <label>Mobile Number</label>
+      <input type="tel" name="mobile" placeholder="Enter mobile number" required>
+
+      <label>Full Address</label>
+      <textarea name="address" placeholder="House / Street / Area" required></textarea>
+
+      <label>City</label>
+      <input type="text" name="city" required>
+
+      <label>Pincode</label>
+      <input type="text" name="pincode" required>
+
+      <input type="hidden" name="price" value="2999">
+      <input type="hidden" name="advance" value="1049.65">
+
+      <h3>Payment</h3>
+
+      <div class="payment-box">
+        <p><b>Product Price: ₹2,999</b></p>
+        <p>35% Advance: <b>₹1,049.65</b></p>
+        <p>COD Available</p>
+
+        <button type="button" class="upi-button" onclick="payUPI()">
+          💳 Pay ₹1,049.65 Advance by UPI
+        </button>
+
+        <p class="upi-note">
+          UPI payment ke baad Transaction ID / UTR enter karein.
+        </p>
+      </div>
+
+      <label>Payment Option</label>
+      <select name="paymentStatus" required>
+        <option value="">Select Payment Option</option>
+        <option value="35% Advance via UPI">35% Advance via UPI</option>
+        <option value="COD - Advance Required">COD - Advance Required</option>
+      </select>
+
+      <label>UTR / Transaction ID</label>
+      <input type="text" name="utr" placeholder="Payment ke baad UTR enter karein">
+
+      <button type="submit" class="submit-button">
+        PLACE ORDER
+      </button>
+
+      <p id="orderStatus"></p>
+
+    </form>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Premium Collection</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
