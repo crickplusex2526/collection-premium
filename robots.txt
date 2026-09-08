@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://crickplusex2526.github.io/Tennis-Pilot-1/sitemap.xml
